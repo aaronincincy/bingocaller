@@ -1,24 +1,19 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import BingoGame from "./components/BingoGame";
+import LastNumberCalled from "./components/LastNumberCalled";
+import CallHistory from "./components/CallHistory";
+import BingoActions from "./components/BingoActions";
+import CalledNumbers from "./components/CalledNumbers";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <BingoGame>
+        <LastNumberCalled />
+        <BingoActions className="actions" />
+        <CalledNumbers className="called" />
+        <CallHistory />
+      </BingoGame>
     </div>
   );
 }

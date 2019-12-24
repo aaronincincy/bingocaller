@@ -1,0 +1,11 @@
+.last {
+  font-size: 300px;
+  line-height: 1em;
+  text-align: center;
+}
+
+@media only screen and (max-width:515px) {
+  .last {
+    font-size: 175px;
+  }
+}

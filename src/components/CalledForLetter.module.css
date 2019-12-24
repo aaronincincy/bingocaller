@@ -1,0 +1,61 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.letter, .number {
+  padding: .5em;
+  text-align: center;
+}
+
+.letter {
+  flex: 0 0;
+  background: white;
+  color: red;
+  min-width: 2em;
+}
+
+.number {
+  flex: 1 1;
+  color: #444;
+}
+
+.called {
+  color: white;
+}
+
+.active {
+  background: white;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0% {
+    color: red;
+  }
+  50% {
+    color: #444;
+  }
+  100% {
+    color: red;
+  }
+}
+
+@media only screen and (max-width: 901px) {
+  .container {
+    font-size: 14px;
+  }
+}
+
+@media only screen and (min-width:900px) {
+  .container {
+    font-size: 25px;
+  }
+}
+
+@media only screen and (max-width:515px) {
+  .container {
+    flex-direction: column;
+  }
+}

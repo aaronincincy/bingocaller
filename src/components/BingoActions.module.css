@@ -1,0 +1,20 @@
+.container {
+  background: #e63935;
+  padding: 1.75em 0;
+  display: flex;
+  justify-content: center;
+}
+
+.action {
+  flex-direction: row;
+  background: #bd2a26;
+  border-radius: .2em;
+  color: white;
+  text-transform: uppercase;
+  border: 0;
+  padding: .7em;
+}
+
+.action+.action {
+  margin-left: 10px;
+}
